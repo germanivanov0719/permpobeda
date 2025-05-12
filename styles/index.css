@@ -1,12 +1,12 @@
 html, body {
     height: 100%;
+    margin: 0 auto;
 }
 
 body {
     background-color: white;
     font-family: "Rubik", sans-serif;
     max-width: 800px;
-    margin: 0 auto;
 }
 
 h1 {
@@ -16,9 +16,11 @@ h1 {
 }
 
 #main-block {
+    height: calc(100% - 2rem);
     display: flex;
     flex-direction: row;
-    margin: calc(50vh - 5em/2) auto calc(50vh - 5em/2 - 2rem) auto;
+    margin: 0 auto;
+    /* calc(50vh - 5em/2) auto calc(50vh - 5em/2 - 2rem) */
     width: max-content;
     gap: 1em;
     align-items: center;
