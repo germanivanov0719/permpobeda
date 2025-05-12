@@ -14,7 +14,7 @@ h1 {
 #main-block {
     display: flex;
     flex-direction: row;
-    margin: calc(50vh - 5em/2) auto;
+    margin: calc(50vh - 5em/2) auto calc(50vh - 5em/2 - 2rem) auto;
     width: max-content;
     gap: 1em;
     align-items: center;
@@ -29,4 +29,20 @@ h1 {
     text-align: left;
     margin: 0 auto;
     align-self: center;
+}
+
+#more {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    font-size: 1em;
+    width: max-content;
+    margin: 0 auto 1em auto;
+    height: 1em;
+}
+
+#more > img {
+    height: 1.5em;
+    margin: 0;
 }
