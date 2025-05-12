@@ -1,54 +1,119 @@
-html, body {
-    height: 100%;
-    margin: 0 auto;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0 auto;
+}
+
+a {
+    color: darkblue;
+}
+b {
+    font-weight: 500;
 }
 
 body {
-    background-color: white;
-    font-family: "Rubik", sans-serif;
-    max-width: 800px;
+  background-color: white;
+  font-family: "Rubik", sans-serif;
+  max-width: 1100px;
 }
 
 h1 {
-    font-weight: 600;
-    font-size: 2.5em;
-    margin: 0;
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* font-size: 1em */
 }
 
 #main-block {
-    height: calc(100% - 2rem);
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    /* calc(50vh - 5em/2) auto calc(50vh - 5em/2 - 2rem) */
-    width: max-content;
-    gap: 1em;
-    align-items: center;
-    font-size: 1.5em;
+  height: calc(100% - 2rem);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  /* calc(50vh - 5em/2) auto calc(50vh - 5em/2 - 2rem) */
+  width: max-content;
+  gap: .5em;
+  align-items: center;
+  font-size: 1.5em;
 }
 
 #main-block > img {
-    height: 5em
+  height: 5em;
 }
 
 #main-block > div {
-    text-align: left;
-    margin: 0 auto;
-    align-self: center;
+  text-align: left;
+  margin: 0 auto;
+  align-self: center;
 }
 
 #more {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: .5em;
-    font-size: 1em;
-    width: max-content;
-    margin: 0 auto 1em auto;
-    height: 1em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  font-size: 1em;
+  width: max-content;
+  margin: 0 auto 5em auto;
+  height: 1em;
 }
 
 #more > img {
-    height: 1.5em;
-    margin: 0;
+  height: 1.5em;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  margin-bottom: 2em;
+}
+
+.card > div {
+  padding: 0 1em;
+}
+.card.reverse > div {
+    text-align: right;
+}
+
+.card > img {
+  /* width: 70%; */
+}
+
+@media (max-width: 850px) {
+  .card {
+    flex-direction: column;
+  }
+  .card > img {
+    width: 100%;
+  }
+  .card.reverse {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+}
+
+#move-perm > h2 {
+    margin-top: 2em;
+    margin-bottom: .5em;
+}
+#move-perm {
+    margin: 2em .5em;
 }
