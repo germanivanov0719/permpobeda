@@ -137,7 +137,8 @@ h3 {
   text-align: right;
   font-size: 0.8em;
   position: absolute;
-  right: max(calc((100vw - var(--max-width)) / 2), 0.5rem);
+  right: max(calc((100vw - var(--max-width)) / 2), 3px);
+  top: 3px;
 }
 
 #madeby > a {
