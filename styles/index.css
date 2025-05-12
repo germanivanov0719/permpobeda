@@ -57,7 +57,7 @@ h3 {
   gap: 0.5em;
   align-items: center;
   font-size: 1.5em;
-  scroll-snap-align: center;
+  scroll-snap-align: end;
 }
 
 #main-block > img {
