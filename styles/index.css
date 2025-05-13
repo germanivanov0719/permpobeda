@@ -6,20 +6,25 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   height: 100%;
+}
+
+html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  margin: 0;
 }
 
 body {
-  height: 100%;
   margin: 0 auto;
 }
 
 a {
   color: darkblue;
 }
+
 b {
   font-weight: 500;
 }
