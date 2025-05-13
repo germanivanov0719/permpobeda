@@ -89,16 +89,19 @@ h3 {
 
 #more {
   align-items: center;
-  display: absolute flex;
+  display: flex;
   flex-direction: row;
   gap: 0.5em;
   font-size: 1em;
   width: max-content;
-  margin: 0 auto 5em auto;
+  margin: 0 auto;
   height: 1em;
   color: inherit;
   text-decoration: none;
+  position: absolute;
   bottom: 1em;
+  left: 0;
+  right: 0;
 }
 
 #more > img {
